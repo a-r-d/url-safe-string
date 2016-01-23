@@ -1,0 +1,29 @@
+{
+  "name": "url-safe-string",
+  "version": "1.0.0",
+  "description": "Dependency free node module to convert strings to URL-safe tags for client side routing, SEO purposes, or, whatever else.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-r-d/url-safe-string.git"
+  },
+  "keywords": [
+    "String to URL",
+    "String to URL tag",
+    "text to URL safe tag",
+    "URL safe String",
+    "URL-safe"
+  ],
+  "author": "Aaron Decker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-r-d/url-safe-string/issues"
+  },
+  "homepage": "https://github.com/a-r-d/url-safe-string#readme",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
