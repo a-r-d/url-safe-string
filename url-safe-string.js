@@ -20,7 +20,7 @@ function UrlSafeString(options){
         args = Array.prototype.slice.call(arguments);
 
       if(!args || args.length === 0)
-        throw new Error('generate method must take at least one argument');
+        throw new Error('generate method must be passed at least one argument');
 
       // validate, trim all arguments:
       for(i = 0; i < args.length; i++) {

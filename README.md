@@ -4,7 +4,7 @@ Dependency free node module to convert strings to URL-safe tags for client side 
 
 ## About
 
-This module has no dependencies, is written in vanilla JavaScript and the newest features it uses are in ES5 (String.prototype.trim(), which happens to be optional). It should work in just about any browser and has a small
+This module has no dependencies, is written in vanilla JavaScript and the newest features it uses are in ES5 (String.prototype.trim(), which happens to be optional). It should work in just about any browser, has a small
 footprint and is meant to be used with frameworks such as AngularJS. The module is also fully tested.
 
 
@@ -31,6 +31,7 @@ var tag = tagGenerator.generate('Some Book Name Here!', 'Some authors Name', 'Pu
 These are the default options, which can all be overriden by passing an object into the constructor.
 
 ```javascript
+// Configured Defaults:
 var _opts = {
   maxLen: 100,                               // truncates beyond maxLen
   lowercaseOnly: true,

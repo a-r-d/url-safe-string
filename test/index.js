@@ -115,5 +115,23 @@ describe('UrlSafeTag', function() {
       assert.equal(output, '-some-book-name-here-some-authors-name-publisher-or-something-');
     });
 
+    it('should blow up with no args', function () {
+      var urlSafe = new UrlSafeString();
+      assert.throws(urlSafe.generate, Error);
+    });
+
+    it('should blow up with on non-string args', function () {
+      var urlSafe = new UrlSafeString();
+      assert.throws(
+        function(){
+          return urlSafe.generate('string', 12345);
+        }, Error);
+
+      assert.throws(
+        function(){
+          return urlSafe.generate({});
+        }, Error);
+    });
+
   });
 });
