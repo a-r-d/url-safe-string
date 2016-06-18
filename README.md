@@ -10,20 +10,19 @@ footprint and is meant to be used with frameworks such as AngularJS. The module 
 
 ## Install
 
-```
+```bash
 npm install --save url-safe-string
 ```
 
 ## Usage
 
 ```javascript
-var UrlSafeString = require('string-safe-string');
+const UrlSafeString = require('string-safe-string'),
+      tagGenerator  = new UrlSafeString();
 
-var tagGenerator = new UrlSafeString();
-var tag = tagGenerator.generate('Some Book Name Here!', 'Some authors Name', 'Publisher or something...');
+let tag = tagGenerator.generate('Some Book Name Here!', 'Some authors Name', 'Publisher or something...');
 
 // tag value --> 'some-book-name-here-some-authors-name-publisher-or-something'
-
 ```
 
 ## options
@@ -32,27 +31,26 @@ These are the default options, which can all be overriden by passing an object i
 
 ```javascript
 // Configured Defaults:
-var _opts = {
-  maxLen: 100,                               // truncates beyond maxLen
-  lowercaseOnly: true,
+const _opts = {
+  maxLen:             100,                   // truncates beyond maxLen
+  lowercaseOnly:      true,
   regexRemovePattern: /((?!([a-z0-9])).)/gi, // matches opposite of [a-z0-9]
-  joinString: '-',                           // e.g. - may be: '-', '_', '#'
-  trimWhitespace: true
+  joinString:         '-',                   // e.g. - may be: '-', '_', '#'
+  trimWhitespace:     true
 }
 
 // Call constructor with custom options:
-var urlSafeTag = new UrlSafeTag({
-  maxLen: 50,
+const urlSafeTag = new UrlSafeTag({
+  maxLen:        50,
   lowercaseOnly: false
 });
-
 ```
 
 ## Tests
 
 This module has a test suite. Test it with mocha:
 
-```
+```bash
 npm install -g mocha
 mocha test
 ```
