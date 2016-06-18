@@ -17,7 +17,7 @@ npm install --save url-safe-string
 ## Usage
 
 ```javascript
-const UrlSafeString = require('string-safe-string'),
+const UrlSafeString = require('url-safe-string'),
       tagGenerator  = new UrlSafeString();
 
 let tag = tagGenerator.generate('Some Book Name Here!', 'Some authors Name', 'Publisher or something...');
