@@ -8,6 +8,14 @@ This module has no dependencies, is written in vanilla JavaScript and the newest
 footprint and is meant to be used with frameworks such as AngularJS. The module is also fully tested.
 
 
+### Warning
+
+This module uses new ECMAScript 2015 (aka ES6) Syntax "const" and "let". Please use it with node 4 or above or transpile it before using it in a browser. If you want to write a babel post-install npm script I'll accept the PR :)
+
+You can also ref the 1.0.0 version if you need the older syntax for the browser.
+
+
+
 ## Install
 
 ```bash
@@ -48,9 +56,7 @@ const urlSafeTag = new UrlSafeTag({
 
 ## Tests
 
-This module has a test suite. Test it with mocha:
-
+This module has a test suite, it uses mocha which is installed via dev dependencies. You can run it using npm scripts:
 ```bash
-npm install -g mocha
-mocha test
+npm run test
 ```

@@ -1,6 +1,9 @@
 {
   "name": "url-safe-string",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "engines" : {
+    "node" : ">=4.0"
+  },
   "description": "Dependency free node module to convert strings to URL-safe tags for client side routing, SEO purposes, or, whatever else.",
   "main": "url-safe-string.js",
   "scripts": {
