@@ -4,7 +4,7 @@
   "description": "Dependency free node module to convert strings to URL-safe tags for client side routing, SEO purposes, or, whatever else.",
   "main": "url-safe-string.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
