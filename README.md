@@ -1,4 +1,5 @@
 # url-safe-string
+[![Build Status](https://travis-ci.org/a-r-d/url-safe-string.svg?branch=master)](https://travis-ci.org/a-r-d/url-safe-string) [![npm version](https://badge.fury.io/js/url-safe-string.svg)](https://badge.fury.io/js/url-safe-string)
 
 Dependency free node module to convert strings to URL-safe tags for client side routing, SEO purposes, or, whatever else.
 
