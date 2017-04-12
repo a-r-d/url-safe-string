@@ -1,5 +1,5 @@
 # url-safe-string
-[![Build Status](https://travis-ci.org/a-r-d/url-safe-string.svg?branch=master)](https://travis-ci.org/a-r-d/url-safe-string) [![npm version](https://badge.fury.io/js/url-safe-string.svg)](https://badge.fury.io/js/url-safe-string)
+[![Build Status](https://travis-ci.org/a-r-d/url-safe-string.svg?branch=master)](https://travis-ci.org/a-r-d/url-safe-string) [![npm version](https://badge.fury.io/js/url-safe-string.svg)](https://badge.fury.io/js/url-safe-string) [![Code Climate](https://codeclimate.com/github/a-r-d/url-safe-string/badges/gpa.svg)](https://codeclimate.com/github/a-r-d/url-safe-string)
 
 [![NPM](https://nodei.co/npm/url-safe-string.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/url-safe-string/)
 
