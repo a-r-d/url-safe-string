@@ -104,6 +104,10 @@ UrlSafeString.generate('München Straße');
 npm test
 ```
 
+## Compatibility
+
+The source code (`url-safe-string.js`) is written in vanilla JavaScript (ES5/ES6 `const`/`let` only) with zero dependencies. It was originally written in 2016 for Node 4 and the runtime code still works all the way back to Node 4+. The `engines` field is set to `>=18` because the test runner (vitest) requires it, not the module itself.
+
 ## Upgrading
 
 ### v1.x to v2.0
@@ -112,13 +116,13 @@ The API is fully backwards compatible. No code changes are needed. The major ver
 
 **Note on transliteration:** v2.0 transliterates accented characters by default (e.g. `ö` -> `oe`). In v1.x these characters were silently stripped. This means output may differ for inputs containing accented characters -- the new output is more correct and SEO-friendly. If you need the old behavior, set `transliterate: false`.
 
-If you are on Node.js 14 or later (released 2020), v2.0 is a drop-in replacement:
+If you are on Node.js 18 or later, v2.0 is a drop-in replacement:
 
 ```bash
 npm install url-safe-string@latest
 ```
 
-If you need to support Node.js < 14, pin to v1.x:
+If you need to support Node.js < 18, pin to v1.x:
 
 ```bash
 npm install url-safe-string@1
@@ -136,9 +140,9 @@ npm install url-safe-string@1
 - Added ES Module support -- `import UrlSafeString from 'url-safe-string'` now works alongside `require()`
 - Added `exports` field for proper dual CJS/ESM package resolution
 - Added `files` field to keep the published package minimal
-- Minimum Node.js version bumped from 4 to 14
+- Minimum Node.js version bumped from 4 to 18
 - Switched test runner from Mocha to Vitest
-- Replaced Travis CI with GitHub Actions (testing Node 14, 16, 18, 20, 22)
+- Replaced Travis CI with GitHub Actions (testing Node 18, 20, 22, 24)
 - Improved npm discoverability with expanded keywords and description
 - Updated README with ESM/TypeScript usage examples and options table
 

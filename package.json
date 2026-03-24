@@ -2,7 +2,7 @@
   "name": "url-safe-string",
   "version": "2.0.0",
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "description": "Dependency free module to convert strings into URL-safe slugs. Use for routing, SEO, permalinks, or any place you need a clean, URL-friendly string.",
   "main": "url-safe-string.js",
