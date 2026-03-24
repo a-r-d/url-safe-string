@@ -1,0 +1,27 @@
+README.md
+  44bd471316f1103d 107-110,119,125,143,145
+package.json
+  44bd471316f1103d 5
+.github/workflows/ci.yml
+  44bd471316f1103d 14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.18",
+  "base_commit_sha": "451d18fd4aa4cc1ceae58d3ca624622f3f08d755",
+  "prompts": {
+    "44bd471316f1103d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5f6dfd40-94a0-4959-8f49-3178d6dfde45",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "aaron decker <aaron@ard.ninja>",
+      "messages": [],
+      "total_additions": 10,
+      "total_deletions": 6,
+      "accepted_lines": 10,
+      "overriden_lines": 0
+    }
+  }
+}
